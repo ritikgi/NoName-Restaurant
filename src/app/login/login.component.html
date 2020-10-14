@@ -1,5 +1,4 @@
-
-  
+<app-nav></app-nav>
 <div id="container">
         <div class="login-wrap">
         <div class="login-html">
@@ -8,19 +7,19 @@
             <form>
                 <div class="form-group">
                   <label for="exampleInputEmail1" class="colora">Email address</label>
-                  <input type="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  <input type="email"  class="form-control" id="exampleInputEmail1" name="email" [(ngModel)]="email" aria-describedby="emailHelp" placeholder="Enter email" required>
                   <small id="emailHelp" class="form-text text-muted colora">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1" class="colora">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                  <input type="password" class="form-control" id="exampleInputPassword1" name="password" [(ngModel)]="password"  placeholder="Password" required>
                 </div>
                 <div class="form-group form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label colora" for="exampleCheck1" >Keep Me Login</label>
+                  <label class="form-check-label colora" for="exampleCheck1"  >Keep Me Login</label>
                 </div>
                 
-                    <button  style='margin-right:16px' class="btn btn-primary " [routerLink]="['/afterlogin/main']" >Login</button>
+                    <button  style='margin-right:16px' class="btn btn-primary" (click)=signin() >Login</button>
               
               </form>
               <hr color="white">
@@ -31,4 +30,7 @@
         </div>
       </div>
       </div>
+
+
+      <app-footer></app-footer>
       

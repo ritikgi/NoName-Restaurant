@@ -7,8 +7,13 @@ import { HomeComponent } from './home/home.component';
 import { ServiceesComponent } from './servicees/servicees.component';
 import { TeamComponent } from './team/team.component';
 import { RegisterComponent } from './register/register.component';
-import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import { HommieComponent } from './hommie/hommie.component';
+import { YogaComponent } from './yoga/yoga.component';
+import { WeightTraningComponent } from './weight-traning/weight-traning.component';
+import { HomeWorkoutComponent } from './home-workout/home-workout.component';
+import { HommihomeComponent } from './hommihome/hommihome.component';
+import { EastDelhiComponent } from './east-delhi/east-delhi.component';
 
 
 const routes: Routes = [
@@ -19,8 +24,14 @@ const routes: Routes = [
   {path:'servicees',component:ServiceesComponent},
   {path:'team',component:TeamComponent},
   {path:'register' , component:RegisterComponent},
-  {path:'signup',component:SignupComponent},
-  {path:'login',component:LoginComponent}
+  {path:'login',component:LoginComponent},
+  {path:'hommie',component:HommieComponent},
+  {path:'yoga',component:YogaComponent},
+  {path:'weight-traning',component:WeightTraningComponent},
+  {path:'home-workout',component:HomeWorkoutComponent},
+  {path:'hommihome',component:HommihomeComponent},
+  {path:'east-delhi',component:EastDelhiComponent}
+  
  
 ];
 
